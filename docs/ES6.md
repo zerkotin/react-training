@@ -159,7 +159,7 @@ let someoneElse = Object.assign({}, someone, {phone: '555-123456'}); //modifies 
 someoneElse; //someone with a phone number ;)
 
 //another way
-let someoneElse = {phone: '555-123456'};
+someoneElse = {phone: '555-123456'};
 Object.assign(someoneElse, someone); //it modifies and returns someoneElse
 someoneElse; //same as before
 ```
