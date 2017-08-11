@@ -118,13 +118,48 @@ foo(o); //name: John, last name: 'Smith', email: john@smith.i
 ```
 
 ## ... operator
-the `...` operator can be used to group/ungroup arrays and objects
+the spread/rest operator can be used to group/ungroup.
 ```javascript
-//TODO add examples
+//array
+const arr = [1,2,3,4];
+
+//function with 4 parameters
+function foo(a, b, c, d) {
+  return a + b + c + d;
+}
+
+//spread
+foo(...arr); //10
+
+//rest
+function bar(...arr) {
+  return arr.length;
+}
+
+bar(1, 2, 3, 4, 5, 6); //6
+
+//concatenating arrays
+let concatenated = [...arr, 5, 6, 7, 8, 9, 10];
+concatenated; //1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
 ```
 
 ## Object.assign
-`Object.assign` is a very useful addition to Object its receives parameters in the form of `(target, source...)` and returns the `source`
+`Object.assign` is a very useful addition to Object its receives parameters in the form of `(target, source...)` and returns the `source`.  
+in short, it merges object properties.
 ```javascript
-//TODO add examples
+let name = 'John';
+let last = 'Smith';
+let email = 'john@smith.i';
+let someone = {name, last, email};
+
+//using object assign
+let someoneElse = Object.assign({}, someone, {phone: '555-123456'}); //modifies an empty object and assigns the result to somoneElse
+someoneElse; //someone with a phone number ;)
+
+//another way
+let someoneElse = {phone: '555-123456'};
+Object.assign(someoneElse, someone); //it modifies and returns someoneElse
+someoneElse; //same as before
 ```
+Just don't forget! the last target overrides previous properties!
