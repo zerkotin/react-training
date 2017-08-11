@@ -80,27 +80,51 @@ i; //reference error!
 same code written with a `var` would have printed `10` as the output of `arr[2]();` or any other number for that matter.  
 in addition `i;` would have printed `10` as well and would not produce an error.  
 
-## destruction
+## arrow functions
 arrow functions are not just shorter, they also share the same `this` as where they are being called from.  
 ES5 syntax problem
 ```javascript
-function Foo() {
-  this.x = 1;
-  this.run = function() {
-    setTimeout(function(){
-      console.log(this.x); //undefined
-    }, 1000);
-  }
+const foo = (prefix, suffix) => prefix + suffix; //create a function
+foo('John', 'Smith'); //JohnSmith
+
+const arr = [1, 2, 3, 4];
+const mapped = arr.map(i => i + 1); //use as callback
+mapped; //2, 3, 4, 5
+
+function SomeClass(service) {
+  this.response = null;
+  service.somethingAsync(response => this.response = response); //short and to the point
 }
 ```
-arrow function solution
+The last example with `SomeClass` would need a `var that = this;` solution or `binding`, arrow functions make it easier.  
+
+## destruction
+concise and destruction are very useful
 ```javascript
-class Foo {
-  constructor() {
-    this.x = 1;
-  }
-  run() {
-    setTimeout( () => console.log(this.x), 1000); //1
-  }
-}
+let o = {name: 'John', last: 'Smith', email: 'john@smith.i'};
+let {name, email} = o;
+name; //John
+email; //john@smith.i
+
+//now lets use concise
+let x = {name, email};
+x; //{name: 'John', email: 'john@smith.i'}
+
+//a useful example
+const foo = ({name, last, email}) => { //destruction
+  console.log(`name: ${name}, last name: ${last}, email: ${email}`); //ES6 template strings
+};
+foo(o); //name: John, last name: 'Smith', email: john@smith.i
+```
+
+## ... operator
+the `...` operator can be used to group/ungroup arrays and objects
+```javascript
+//TODO add examples
+```
+
+## Object.assign
+`Object.assign` is a very useful addition to Object its receives parameters in the form of `(target, source...)` and returns the `source`
+```javascript
+//TODO add examples
 ```
