@@ -61,7 +61,8 @@ foo = {
 
 ## const and let
 `const` and `let` are somewhat like `var` but like the name suggests, `const` is a constant.  
-both `const` and `let` differ from `var` by being __block scoped__ as opposed to the __function scoped__ `var`  
+both `const` and `let` differ from `var` by being __block scoped__ as opposed to the __function scoped__ `var`.
+
 const example
 ```javascript
 const x = 1;
