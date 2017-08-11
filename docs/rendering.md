@@ -1,5 +1,9 @@
 # Rendering
-react's main feature is deciding when and which element to render, but how do we render the first page?
+react's main feature is deciding when and which element to render, but how do we render the first page?  
+we need an HTML page with a `<div id="app"></div>`  
+it's bet practice to not render to the `body` of our HTML.
+
+render example
 ```javascript
 import React from 'react';
 import {render} from 'react-dom'; //destructing the 'render' method from 'react-dom'

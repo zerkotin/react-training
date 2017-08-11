@@ -5,9 +5,8 @@ you clone an example environment from [zerkotin/react](http://github.com/zerkoti
 - [ES6 Essentials](docs/ES6.md)
 - [JSX](docs/JSX.md)
 - [rendering](docs/rendering.md)
-- Stateless components
-- Stateful Components
-- props
+- [Stateless components](docs/stateless-components.md)
+- [Stateful Components](docs/stateful-components.md)
 - state
 - Async
 - Router
