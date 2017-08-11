@@ -1,7 +1,7 @@
 # react-training
 a fast introduction to react
 
-- ES6 prerequisites
+- [ES6 prerequisites](docs/ES6.md)
 - JSX
 - rendering
 - Stateless components
