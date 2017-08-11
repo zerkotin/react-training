@@ -152,15 +152,18 @@ in short, it merges object properties.
 let name = 'John';
 let last = 'Smith';
 let email = 'john@smith.i';
+let phone = '555-123456';
 let someone = {name, last, email}; //note the concise assignment
 
 //using object assign
-let someoneElse = Object.assign({}, someone, {phone: '555-123456'}); //modifies an empty object and assigns the result to somoneElse
+let someoneElse = Object.assign({}, someone, {phone});
+someone; //{name: 'John', last: 'Smith', email: 'john@smith.i'}
 someoneElse; //{name: 'John', last: 'Smith', email: 'john@smith.i', phone: '555-123456'}
 
 //another way
-someoneElse = {phone: '555-123456'};
-Object.assign(someoneElse, someone); //it modifies and returns someoneElse
+someoneElse = {phone};
+Object.assign(someoneElse, someone);
+someone; //{name: 'John', last: 'Smith', email: 'john@smith.i'}
 someoneElse; //{name: 'John', last: 'Smith', email: 'john@smith.i', phone: '555-123456'}
 ```
 Just don't forget! the last target overrides previous properties with the same name!
