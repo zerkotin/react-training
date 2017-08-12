@@ -7,8 +7,8 @@ you clone an example environment from [zerkotin/react](http://github.com/zerkoti
 - [rendering](docs/rendering.md)
 - [Stateless components](docs/stateless-components.md)
 - [Stateful Components](docs/stateful-components.md)
-- Component lifecycle
-- Controlled components
+- [Component lifecycle](docs/component-lifecycle.md)
+- [Controlled components](docs/controlled-components.md)
 - Async
 - Router
 - API and Type safety
