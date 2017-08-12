@@ -46,7 +46,7 @@ rules regarding state
 - change data in the state with `this.setState` function
 - keep the data you store in the state immutable
 ### 2 ways to use `setState`
-`setState` can receive a function with previous state as an argument
+1. `setState` can receive a function with previous state as an argument
 ```javascript
 toggle() {
   this.setState( previousState => !previousState.toggle ); //arrow function with previous state
@@ -54,7 +54,7 @@ toggle() {
 ```
 state changes are async, whenever you are changing data progressively, you should use this method.
 
-`setState` can receive an `Object`
+2. `setState` can receive an `Object`
 ```javascript
 toggle() {
   this.setState({toggle: false}); //object
