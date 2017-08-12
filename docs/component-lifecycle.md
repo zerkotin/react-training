@@ -20,7 +20,7 @@ the following functions are called when there's an update to either `props` or `
 4. `render`
 5. `componentDidUpdate(prevProps, prevState)`
 
-_**note** that unless `shouldComponentUpdate` returns `false` react will render on every `prop` and `state` change._
+_**note** unless `shouldComponentUpdate` returns `false` react will render on every `prop` and `state` change._
 
 ## unmounting
 unmounting occurs when a component is being removed from the DOM.  
