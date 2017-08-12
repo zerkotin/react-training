@@ -9,6 +9,5 @@ you clone an example environment from [zerkotin/react](http://github.com/zerkoti
 - [Stateful Components](docs/stateful-components.md)
 - [Component lifecycle](docs/component-lifecycle.md)
 - [Controlled components](docs/controlled-components.md)
-- Async
-- Router
-- API and Type safety
+- [Router](docs/router.md)
+- [Type safety and API](docs/prop-types.md)
