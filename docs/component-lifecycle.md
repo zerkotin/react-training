@@ -27,3 +27,17 @@ this is where you want to remove any Event listeners you have initiated in this 
 
 ## note
 there is also `tnis.forceUpdate` but i recommend not using it. as a general rule, if you need to use it you probably didn't think it through.
+
+## example
+consider the following code
+```javascript
+componentDidMount() {
+  //updating state.name from URL #
+  this.historyListener = this.props.history.listen(location => this.setState({name: location.hash.slice(1)});
+}
+
+componentWillUnmount {
+  this.historyListener(); //removing history listerner
+}
+```
+this is a real code, on some occasions you really need to unregister yourself from events.
