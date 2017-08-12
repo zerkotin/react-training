@@ -41,6 +41,24 @@ first let's break it down the render part
 - `{this.state.toggle? 'on' : 'off'}` - javascript that returns 'on'/'off' according to state.toggle property
 
 ## the state
-- mutable
-- setState with/without previous state
-- can set partial state
+just like `props` the `state` is also a reserved name.  
+rules regarding state
+- change data in the state with `this.setState` function
+- keep the data you store in the state immutable
+### 2 ways to use `setState`
+`setState` can receive a function with previous state as an argument
+```javascript
+toggle() {
+  this.setState( previousState => !previousState.toggle ); //arrow function with previous state
+}
+```
+state changes are async, whenever you are changing data progressively, you should use this method.
+
+`setState` can receive an `Object`
+```javascript
+toggle() {
+  this.setState({toggle: false}); //object
+}
+```
+when using an `Object` as the argument in `setState` we can set a partial state, and only the keys we provide will change, the rest will remain untouched.
+
