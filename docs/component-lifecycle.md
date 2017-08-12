@@ -31,6 +31,7 @@ there is also `tnis.forceUpdate` but i recommend not using it. as a general rule
 ## example
 consider the following code
 ```javascript
+//skipping the imports and class declarations
 componentDidMount() {
   //updating state.name from URL #
   this.historyListener = this.props.history.listen(location => this.setState({name: location.hash.slice(1)});
