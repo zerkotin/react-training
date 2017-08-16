@@ -74,7 +74,7 @@ without `exact` they both match `/users` as a `path` prop
 a `Link` is a clickable components that once clicked will change the URL to the one given through `to` prop.  
 this will cause the router to render a component with a matching path.
 
-## programatically browsing
+## withRouter - programatically browsing
 using `Link` we can browse the application, but sometimes we need Event driven browsing. for this we have `withRouter`.
 the usage of `withRouter` will add to a component the following props
 - `history`  - [docs](http://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/history.md)
