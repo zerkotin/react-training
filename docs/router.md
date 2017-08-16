@@ -25,8 +25,10 @@ function AppView(){
       <Link to="/contact">click to render contact view</Link> {/*Link to /contact*/}
       {/*routes*/}
       <Switch>
-        <Route path="/about" component={AboutView}/> {/*Route will be rendered when clicking on about link*/}
-        <Route path="/contact" component={ContactView}/> {/*Route will be rendered when clicking on contact link*/}
+        {/*Route will be rendered when clicking on about link*/}
+        <Route path="/about" component={AboutView}/>
+        {/*Route will be rendered when clicking on contact link*/}
+        <Route path="/contact" component={ContactView}/> 
       </Switch>
     </div>
   );
@@ -77,9 +79,9 @@ this will cause the router to render a component with a matching path.
 ## withRouter - programatically browsing
 using `Link` we can browse the application, but sometimes we need Event driven browsing. for this we have `withRouter`.
 the usage of `withRouter` will add to a component the following props
-- `history`  - [docs](http://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/history.md)
-- `location` - [docs](http://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/location.md)
-- `match` - [docs](http://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/match.md)
+- `history`  - [docs on github](http://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/history.md)
+- `location` - [docs on github](http://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/location.md)
+- `match` - [docs on github](http://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/match.md)
 
 the following example will create a component that shows the current URL path and follows it for changes
 ```javascript
