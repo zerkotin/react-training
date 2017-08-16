@@ -10,7 +10,4 @@ you clone an example environment from [zerkotin/react](http://github.com/zerkoti
 - [Component lifecycle](docs/component-lifecycle.md)
 - [Controlled components](docs/controlled-components.md)
 - [Router](docs/router.md)
-
-Coming Soon
-
 - [Type safety and API](docs/prop-types.md)
