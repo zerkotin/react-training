@@ -8,7 +8,7 @@ It is possoble to write react apps with ES5, but ES6 has some great features you
 - `...` operator
 - `Object.assign`
 
-You can learn about it in detail with the book [You-Dont-Know-JS](http://github.com/getify/You-Dont-Know-JS)  
+You can learn about it in detail with the book [You-Dont-Know-JS on github](http://github.com/getify/You-Dont-Know-JS)  
 Under: ES6 & Beyond -> Chapter 2: Syntax  
 
 Lets go through the highlights quickly...
@@ -39,7 +39,7 @@ class Worker extends User {
   }
 }
 ```
-you can't even imagine how much boilerplate code is saves, if you want to have an idea you can take a look at my [Javascript training](http://github.com/zerkotin/javascript) under: `prototypes.js`
+you can't even imagine how much boilerplate code is saves, if you want to have an idea you can take a look at my [Javascript training on github](http://github.com/zerkotin/javascript) under: `prototypes.js`
 
 ## concise
 concise function syntax
