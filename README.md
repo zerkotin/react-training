@@ -12,3 +12,7 @@ you clone an example environment from [zerkotin/react](http://github.com/zerkoti
 - [Uncontrolled components](docs/uncontrolled-components.md)
 - [Router](docs/router.md)
 - [Type safety and API](docs/prop-types.md)
+
+### Coming soon
+- Pure Component
+- Children
