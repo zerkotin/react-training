@@ -16,3 +16,4 @@ you clone an example environment from [zerkotin/react](http://github.com/zerkoti
 ### Coming soon
 - Pure Component
 - Children
+- Inline Styles
