@@ -6,7 +6,7 @@ it's bet practice to not render to the `body` of our HTML.
 render example
 ```javascript
 import React from 'react';
-import {render} from 'react-dom'; //destructing the 'render' method from 'react-dom'
+import {render} from 'react-dom'; //destructuring the 'render' method from 'react-dom'
 
 render(<div>hello</div>, document.getElementById('app')); //render to an element with id="app"
 ```
