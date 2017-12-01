@@ -4,7 +4,7 @@ It is possoble to write react apps with ES5, but ES6 has some great features you
 - classes `class foo {}`
 - `let` and `const`
 - arrow functions `=>`
-- destruction `{foo, bar} = o;`
+- destructuring `{foo, bar} = o;`
 - `...` operator
 - `Object.assign`
 
@@ -99,7 +99,7 @@ function SomeClass(service) {
 ```
 The last example with `SomeClass` would need a `var that = this;` solution or `binding`, arrow functions make it easier.  
 
-## destruction
+## destructuring
 concise and destruction are very useful
 ```javascript
 let o = {name: 'John', last: 'Smith', email: 'john@smith.i'};
