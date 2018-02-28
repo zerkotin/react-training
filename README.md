@@ -17,3 +17,5 @@ you clone an example environment from [zerkotin/react](http://github.com/zerkoti
 - Pure Component
 - Children
 - Inline Styles
+- Higher Order Components
+- Redux
