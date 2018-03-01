@@ -20,3 +20,6 @@ Icon.propTypes = {
 ## types
 i will not specify all type options here, but we can take a look at the prop-types repo for examples.  
 [prop-types on github](http://github.com/facebook/prop-types)
+
+# Typescript
+- TBD
