@@ -22,7 +22,7 @@ import {render} from 'react-dom';
 
 const Greeting = (props) => <div>{props.name}</div>;
 
-render(<Greeting name-"John" />, document.getElementById('app')); //there
+render(<Greeting name="John" />, document.getElementById('app')); //there
 ```
 we have a website that says John!
 
