@@ -47,6 +47,51 @@ There is also `forceUpdate` but it is not recommend to use it. as a general rule
 
 ## Complete Example
 ```javascript
-// TODO
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {clicked: false}
+    
+    this.handleClick=this.handleClick.bind(this);
+  }
+  
+  static getDerivedStateFromProps(props, state) {
+    return {
+      clicked: props.clicked
+    };
+  }
+  
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props.clicked !== nextProps.clicked || this.state.clicked !== nextState.clicked;
+  }
+  
+  render() {
+    
+    return <div className={this.state.clicked ? "clicked" : ""} onClick={this.handleClick}>Click Me</div>;
+  }
+  
+  componentDidMount() {
+    // fetch from server
+  }
+  
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    // ?
+  }
+  
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    // ?
+  }
+  
+  componentWillUnmount() {
+    // deregister from events
+  }
+  
+  
+  handleClick() {
+    this.setState({clicked: true});
+  }
+}
 ```
+
+You can play around with the example [Here](https://codepen.io/zerkotin/pen/QWjXgYB "Codepen.io")
 
