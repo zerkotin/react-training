@@ -40,7 +40,7 @@ first let's break it down the render part
 - `onClick={this.toggle}` - binding 'click event' to `toggle` function of the class
 - `{this.state.toggle? 'on' : 'off'}` - javascript that returns 'on'/'off' according to state.toggle property
 
-## the state
+## the State
 just like `props` the `state` is also a reserved name.  
 rules regarding state
 - change data in the state with `this.setState` function
