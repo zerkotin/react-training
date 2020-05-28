@@ -44,3 +44,9 @@ This is an example of using mount and unmount in order to register an event list
 
 ## Note
 There is also `forceUpdate` but it is not recommend to use it. as a general rule of thumb, if you need to use it you probably didn't think it through.
+
+## Complete Example
+```javascript
+// TODO
+```
+
