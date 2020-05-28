@@ -71,19 +71,19 @@ class Example extends React.Component {
   }
   
   componentDidMount() {
-    // fetch from server
+    fetch('1.json').then(r => console.log(r));
   }
   
   getSnapshotBeforeUpdate(prevProps, prevState) {
-    // ?
+    // scrollbar calculations?!
   }
   
   componentDidUpdate(prevProps, prevState, snapshot) {
-    // ?
+    // post update calculations
   }
   
   componentWillUnmount() {
-    // deregister from events
+    // deregister from external events
   }
   
   
