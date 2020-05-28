@@ -7,7 +7,7 @@ a component is a function that receives 'props'
 const Greeting = (props) => <div>{props.name}</div>; //using an arrow function
 
 //or a function
-function Greeting(props) {
+function Greeting(props) { // the preferable way
   return <div>{props.name}</div>;
 }
 ```
