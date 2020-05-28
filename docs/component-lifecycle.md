@@ -1,3 +1,5 @@
+[The official React component lifecycle page](https://reactjs.org/docs/react-component.html "Component Lifecycle")
+
 # Component lifecycle
 component lifecycle is made of a few parts
 1. mounting
