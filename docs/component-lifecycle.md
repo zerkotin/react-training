@@ -71,7 +71,7 @@ class Example extends React.Component {
   }
   
   componentDidMount() {
-    fetch('1.json').then(r => console.log(r));
+    fetch('1.json').then(r => this.setState({data: r}));
   }
   
   getSnapshotBeforeUpdate(prevProps, prevState) {
