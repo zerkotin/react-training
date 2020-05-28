@@ -1,5 +1,5 @@
 # react-training
-a fast introduction to react  
+A quick introduction to React  
 you clone an example environment from [zerkotin/react](http://github.com/zerkotin/react)
 
 - [ES6 Essentials](docs/ES6.md)
