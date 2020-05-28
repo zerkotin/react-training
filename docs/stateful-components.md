@@ -52,7 +52,7 @@ toggle() {
   this.setState( previousState => !previousState.toggle ); //arrow function with previous state
 }
 ```
-state changes are async, whenever you are changing data progressively, you should use this method.
+Note: state changes are async, whenever you are changing data progressively, you should use this method.
 
 2. `setState` can receive an `Object`
 ```javascript
