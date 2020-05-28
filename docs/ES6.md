@@ -145,6 +145,19 @@ concatenated; //1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 ```
 
+it can also be used in objects
+```javascript
+const address = 'some street 123, 12345 city';
+
+const state = {name: 'my name', phone: '12345'};
+
+const extendedState = {
+  ...state, // shallow copy of properties from state
+  maidenName: 'my old name', // not concise
+  address // concise
+};
+```
+
 ## Object.assign
 `Object.assign` is a very useful addition to Object its receives parameters in the form of `(target, source...)` and returns the `source`.  
 in short, it merges object properties.
