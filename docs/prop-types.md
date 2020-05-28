@@ -22,4 +22,4 @@ i will not specify all type options here, but we can take a look at the prop-typ
 [prop-types on github](http://github.com/facebook/prop-types)
 
 # Typescript
-- TBD
+Another popular way to enforce typing is [Typescript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html "Typescript in 5 min")
