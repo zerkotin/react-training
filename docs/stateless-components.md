@@ -26,7 +26,7 @@ render(<Greeting name="John" />, document.getElementById('app')); //there
 ```
 we have a website that says John!
 
-## Some default props and Events
+## Some default props and Events examples
 there are some react reserved props
 - className - instead of the usual html property `class`
 - onClick - for click events
