@@ -2,6 +2,7 @@
 A quick introduction to React  
 you clone an example environment from [zerkotin/react](http://github.com/zerkotin/react)
 
+## Basics
 - [ES6 Essentials](docs/ES6.md)
 - [JSX](docs/JSX.md)
 - [rendering](docs/rendering.md)
@@ -10,6 +11,8 @@ you clone an example environment from [zerkotin/react](http://github.com/zerkoti
 - [Component lifecycle](docs/component-lifecycle.md)
 - [Controlled components](docs/controlled-components.md)
 - [Uncontrolled components](docs/uncontrolled-components.md)
+
+## Extras
 - [Pure components](docs/pure-components.md)
 - [Higher order React components](https://github.com/zerkotin/react/blob/master/src/js/components/remote.jsx "Code example")
 - [Inline Styles](https://github.com/zerkotin/react/blob/master/src/js/components/styles.js "My examples of inline styles")
