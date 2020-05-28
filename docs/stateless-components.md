@@ -1,7 +1,7 @@
 # Stateless Components
 reacts simplest component is called a stateless component
 
-## how to write a component
+## How to write a component
 a component is a function that receives 'props'
 ```javascript
 const Greeting = (props) => <div>{props.name}</div>; //using an arrow function
@@ -14,7 +14,7 @@ function Greeting(props) { // the preferable way
 note the `{props.name}` - when writing DOM elements you can evaluate javascript expressions inside curly brackets.  
 `props` is the way react components pass data down the chain.
 
-## how to use
+## How to use
 so we wrote a Component, but how do i use it?  
 ```javascript
 import React from 'react';
@@ -26,7 +26,7 @@ render(<Greeting name="John" />, document.getElementById('app')); //there
 ```
 we have a website that says John!
 
-## some default props
+## Some default props and Events
 there are some react reserved props
 - className - instead of the usual html property `class`
 - onClick - for click events
