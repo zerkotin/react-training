@@ -1,10 +1,10 @@
-# component lifecycle
+# Component lifecycle
 component lifecycle is made of a few parts
 1. mounting
 2. updating props/state
 3. unmounting
 
-## mounting
+## Mounting
 mounting occurs when a component is being assigned to the DOM and is set to be rendered.  
 mounting fires the following functions in the component and in that specific order
 1. `constructor(props)`
@@ -12,7 +12,7 @@ mounting fires the following functions in the component and in that specific ord
 3. `render`
 4. `componentDidMount` - _this is where we usually make our AJAX calls_
 
-## updating props/state
+## Updating Props/State
 the following functions are called when there's an update to either `props` or `state`
 1. `componentWillReceiveProps(nextProps)` - _occurs before props change_
 2. `shouldComponentUpdate(nextProps, nextState)` - _return false to prevent component from rendering on certain conditions_
@@ -22,15 +22,15 @@ the following functions are called when there's an update to either `props` or `
 
 _**note** unless `shouldComponentUpdate` returns `false` react will render on every `prop` and `state` change._
 
-## unmounting
+## Unmounting
 unmounting occurs when a component is being removed from the DOM.  
 this is where you want to remove any Event listeners you have initiated in this component.
 1. `componentWillUnmount`
 
-## note
-there is also `tnis.forceUpdate` but i recommend not using it. as a general rule, if you need to use it you probably didn't think it through.
+## Note
+there is also `tnis.forceUpdate` but it is not recommend to use it. as a general rule of thumb, if you need to use it you probably didn't think it through.
 
-## example
+## Example
 consider the following code
 ```javascript
 //skipping the imports and class declarations
@@ -43,4 +43,4 @@ componentWillUnmount {
   this.historyListener(); //removing history listerner
 }
 ```
-this is a real code, on some occasions you really need to unregister yourself from events.
+this is an example of using mount and unmount in order to register an event listener and removing the listener when unmounting.
