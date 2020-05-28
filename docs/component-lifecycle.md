@@ -1,26 +1,25 @@
 [The official React component lifecycle page](https://reactjs.org/docs/react-component.html "Component Lifecycle")
 
 # Component lifecycle
-component lifecycle is made of a few parts
-1. mounting
-2. updating props/state
-3. unmounting
+The component lifecycle is made of 3 parts
+1. Mount
+2. Update
+3. Unmount
 
 ## Mounting
 mounting occurs when a component is being assigned to the DOM and is set to be rendered.  
 mounting fires the following functions in the component and in that specific order
-1. `constructor(props)`
-2. `componentWillMount`
+1. `constructor()`
+2. `static getDerivedStateFromProps()`
 3. `render`
 4. `componentDidMount` - _this is where we usually make our AJAX calls_
 
 ## Updating Props/State
-the following functions are called when there's an update to either `props` or `state`
-1. `componentWillReceiveProps(nextProps)` - _occurs before props change_
-2. `shouldComponentUpdate(nextProps, nextState)` - _return false to prevent component from rendering on certain conditions_
-3. `componentWillUpdate(nextProps, nextState)`
-4. `render`
-5. `componentDidUpdate(prevProps, prevState)`
+The following functions are called when there's an update to either `props` or `state` and are in that order  
+1. `static getDerivedStateFromProps()`
+2. `shouldComponentUpdate()` - _return false to prevent component from rendering on certain conditions_
+3. `render`
+4. `componentDidUpdate()`
 
 _**note** unless `shouldComponentUpdate` returns `false` react will render on every `prop` and `state` change._
 
