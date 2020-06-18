@@ -2,7 +2,7 @@
 A quick introduction to React  
 
 Quick Setup options for testing:
-1. [In Browser Environment]()
+1. [In Browser Environment](inbrowser.html)
 2. [Codepen example](https://codepen.io/zerkotin/pen/rNxaQWW)
 3. [create-app by react](https://create-react-app.dev/docs/getting-started/)
 
