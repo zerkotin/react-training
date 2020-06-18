@@ -1,6 +1,11 @@
 # react-training
 A quick introduction to React  
-you can clone an example environment from [zerkotin/react](http://github.com/zerkotin/react)
+
+Quick Setup options for testing:
+1. [In Browser Environment]()
+2. [Codepen example](https://codepen.io/zerkotin/pen/rNxaQWW)
+3. [create-app by react](https://create-react-app.dev/docs/getting-started/)
+
 
 ## Basics
 - [ES6 Essentials](docs/ES6.md)
