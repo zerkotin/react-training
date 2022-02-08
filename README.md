@@ -26,3 +26,4 @@ Quick Setup options for testing:
 
 ### TODO
 - Redux
+- React HOOKS
